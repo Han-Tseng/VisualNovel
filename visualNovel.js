@@ -4,6 +4,13 @@
 // Select the button you want to edit
 // Run a function when it is clicked
 
+//Sound Variables
+var hitSound = new Audio("sounds/hitsound.mp3");
+var loseSound = new Audio("sounds/losesound.mp3");
+var tigerSound = new Audio("sounds/tigersound.mp3");
+var waterSound = new Audio("sounds/watersound.mp3");
+var winSound = new Audio("sounds/winsound.mp3");
+
 //1 Start Button
 document.querySelector(".start-btn").addEventListener("click", function() {
     // Story
@@ -77,6 +84,8 @@ document.querySelector(".jump-btn").addEventListener("click", function() {
     document.querySelector(".fire-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //4-2 Fire Button
@@ -101,6 +110,8 @@ document.querySelector(".approach-btn").addEventListener("click", function() {
     // Show next buttons
     document.querySelector(".attiger-btn").classList.remove("invisible");
     document.querySelector(".atsticks-btn").classList.remove("invisible");
+    //Play Sound
+    tigerSound.play();
 });
 
 //4-4 Run Button
@@ -136,6 +147,8 @@ document.querySelector(".giveup-btn").addEventListener("click", function() {
     document.querySelector(".giveup-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //5-3 At Tiger Button
@@ -148,6 +161,8 @@ document.querySelector(".attiger-btn").addEventListener("click", function() {
     // Show next buttons
     document.querySelector(".apologize-btn").classList.remove("invisible");
     document.querySelector(".throwagain-btn").classList.remove("invisible");
+    //Play Sound
+    hitSound.play();
 });
 
 //5-4 At Sticks Button
@@ -159,6 +174,8 @@ document.querySelector(".atsticks-btn").addEventListener("click", function() {
     document.querySelector(".atsticks-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".continue54-btn").classList.remove("invisible");
+    //Play Sound
+    hitSound.play();
 });
 
 //5-5 End Stop Button
@@ -170,6 +187,8 @@ document.querySelector(".stop-btn").addEventListener("click", function() {
     document.querySelector(".keeprunning-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //5-6 End Keep Running Button
@@ -181,6 +200,8 @@ document.querySelector(".keeprunning-btn").addEventListener("click", function() 
     document.querySelector(".keeprunning-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //6-1 Swim Button
@@ -194,6 +215,8 @@ document.querySelector(".swim-btn").addEventListener("click", function() {
     document.querySelector(".continue61-btn").classList.remove("invisible");
     //Change Background
     document.querySelector(".container").classList.add("ocean-newbg");
+    //Play Sound
+    waterSound.play();
 });
 
 //6-2 Wait Button
@@ -218,6 +241,8 @@ document.querySelector(".apologize-btn").addEventListener("click", function() {
     document.querySelector(".throwagain-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //6-4 End At Tiger Button
@@ -229,6 +254,8 @@ document.querySelector(".throwagain-btn").addEventListener("click", function() {
     document.querySelector(".throwagain-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //6-5 Continue Button
@@ -250,6 +277,8 @@ document.querySelector(".continue61-btn").addEventListener("click", function() {
     document.querySelector(".continue61-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //7-2 End Continue Button
@@ -260,6 +289,8 @@ document.querySelector(".continue62-btn").addEventListener("click", function() {
     document.querySelector(".continue62-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });
 
 //7-3 Stream Button
@@ -299,6 +330,8 @@ document.querySelector(".longjump-btn").addEventListener("click", function() {
     document.querySelector(".liedown-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });  
 
 //8-2 Lie Down Button
@@ -311,6 +344,8 @@ document.querySelector(".liedown-btn").addEventListener("click", function() {
     // Show next buttons
     document.querySelector(".circulate-btn").classList.remove("invisible");
     document.querySelector(".land-btn").classList.remove("invisible");
+    //Play Sound
+    waterSound.play();
 });  
 
 //8-3 End Go In Button
@@ -322,6 +357,8 @@ document.querySelector(".goin-btn").addEventListener("click", function() {
     document.querySelector(".returnback-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });  
 
 //8-4 End Return Back Button
@@ -333,6 +370,8 @@ document.querySelector(".returnback-btn").addEventListener("click", function() {
     document.querySelector(".returnback-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });  
 
 //9-1 Success Circulate Button
@@ -344,6 +383,8 @@ document.querySelector(".circulate-btn").addEventListener("click", function() {
     document.querySelector(".land-btn").classList.add("invisible");
     //Change Background
     document.querySelector(".container").classList.add("island-newbg");
+    //Play Sound
+    winSound.play();
 });  
 
 //9-2 End Land Button
@@ -355,4 +396,6 @@ document.querySelector(".land-btn").addEventListener("click", function() {
     document.querySelector(".land-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".reset-btn").classList.remove("invisible");
+    //Play Sound
+    loseSound.play();
 });  
