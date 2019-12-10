@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* BACKGROUND*/
+
+.container {
+    height: 100vh;
+    background-image: url('images/oceanbg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+/* JAVASCRIPT TEST AREA */
+
+.test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+}
+
+/* VISUAL NOVEL */
+
+.btn-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.btn {
+    background-color: rgb(37, 117, 155);
+    margin: 16px;
+    padding: 10px 10px;
+    width: 150px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+}
+
+.story img {
+    height: 275px;
+    width: 400px;
+    margin: 16px auto 0 auto;
+}
+
+.invisible {
+    display: none;
+}
+
+/*VISUAL NOVEL BACKGROUNDS*/
+.beach-newbg {
+    background-image: url("images/beachbg.jpg");
+}
+
+.cave-newbg {
+    background-image: url("images/cavebg.jpg");
+}
+
+.island-newbg {
+    background-image: url("images/islandbg.jpg");
+}
+
+.mountain-newbg {
+    background-image: url("images/mountainbg.jpg");
+}
+
+.ocean-newbg {
+    background-image: url("images/oceanbg.jpg");
+}
+
+.rainforest-newbg {
+    background-image: url("images/rainforestbg.jpg");
+}
+
+.stream-newbg {
+    background-image: url("images/streambg.jpg");
+}
+
+/*VISUAL NOVEL BACKGROUNDS*/
+.beach-newbg {
+    background-image: url("images/beachbg.jpg");
+}
+
+.cave-newbg {
+    background-image: url("images/cavebg.jpg");
+}
+
+.island-newbg {
+    background-image: url("images/islandbg.jpg");
+}
+
+.mountain-newbg {
+    background-image: url("images/mountainbg.jpg");
+}
+
+.ocean-newbg {
+    background-image: url("images/oceanbg.jpg");
+}
+
+.rainforest-newbg {
+    background-image: url("images/rainforestbg.jpg");
+}
+
+.stream-newbg {
+    background-image: url("images/streambg.jpg");
+}
