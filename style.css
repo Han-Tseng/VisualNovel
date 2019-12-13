@@ -135,32 +135,3 @@
 .stream-newbg {
     background-image: url("images/streambg.jpg");
 }
-
-/*VISUAL NOVEL BACKGROUNDS*/
-.beach-newbg {
-    background-image: url("images/beachbg.jpg");
-}
-
-.cave-newbg {
-    background-image: url("images/cavebg.jpg");
-}
-
-.island-newbg {
-    background-image: url("images/islandbg.jpg");
-}
-
-.mountain-newbg {
-    background-image: url("images/mountainbg.jpg");
-}
-
-.ocean-newbg {
-    background-image: url("images/oceanbg.jpg");
-}
-
-.rainforest-newbg {
-    background-image: url("images/rainforestbg.jpg");
-}
-
-.stream-newbg {
-    background-image: url("images/streambg.jpg");
-}

@@ -31,6 +31,8 @@ document.querySelector(".reset-btn").addEventListener("click", function() {
     document.querySelector(".reset-btn").classList.add("invisible");
     // Show next buttons
     document.querySelector(".continue1-btn").classList.remove("invisible");
+    //Remove All Backgrounds
+    document.querySelector(".container").classList.remove("beach-newbg","cave-newbg","island-newbg","mountain-newbg","ocean-newbg","rainforest-newbg","stream-newbg")
     //Change Background
     document.querySelector(".container").classList.add("island-newbg");
 });
